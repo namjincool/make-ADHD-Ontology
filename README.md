@@ -8,7 +8,7 @@ Evidence-first ontology pack for structuring ADHD characteristics, functional im
 - `ontology/`: seed ontology and clearly marked candidate claims.
 - `qa/`: v0.4 pack QA and Golden QA inputs, source anchors, and run output.
 - `provenance/`: selected-source manifest, local integrity report, and initial OpenCrab ingest receipt.
-- `release/`: OpenCrab-importable v0.4 ZIP export.
+- `release/`: the original OpenCrab v0.4 ZIP as numbered binary parts, with a reassembly and SHA-256 check.
 - `history/`: earlier schema and QA-run artifacts; these are retained for traceability and are not the canonical release.
 
 ## Verified release snapshot
@@ -32,5 +32,4 @@ Markdown navigation follows a sectioned design-spec pattern and keeps `resource`
 1. Read `docs/ADHD_Ontology_Pack_v0.1_Design_Spec.md`.
 2. Check the canonical class/relation definitions in `docs/ADHD_ontology_schema_v0.2.md` and `.json`.
 3. Review `qa/ADHD_Pack_QA_v0.4.md` before interpreting retrieval results.
-4. Import `release/ADHD_Ontology_Pack_v0.4_reviewed_strict.zip` into OpenCrab.
-
+4. Run `python release/reassemble_pack.py`, verify its SHA-256 success message, then import the reconstructed ZIP into OpenCrab.
