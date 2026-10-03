@@ -1,0 +1,452 @@
+[
+  {
+    "question_id": "Q01",
+    "filename": "GQ_Q01_P03_NIMH_General.md",
+    "sources": [
+      {
+        "source_id": "P03_NIMH_General",
+        "source_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+        "original_chunk_id": "chunk:9348991035ce0111",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "3cd39d7881c5573b0533aa157664cd64e4de97fbdeeb37c0a131ad720e1f6cd0",
+        "excerpt_sha256": "f96ad0df10251b025d4e2d26f2996960af0fd80e8c80959a3d2fea98efeff653",
+        "anchor": "persistent symptoms of inattention, hyperactivity, and impulsivity"
+      }
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "filename": "GQ_Q02_P04_NIMH_Adults.md",
+    "sources": [
+      {
+        "source_id": "P04_NIMH_Adults",
+        "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+        "original_chunk_id": "chunk:dd2d60bd695844a1",
+        "original_chunk_index": 2,
+        "original_chunk_sha256": "8324695d2a1ed119b56e6df99776f309a4d41460cd37ee19aa1da00ef2dec7b3",
+        "excerpt_sha256": "ff8209248bef75d778984f3b163f09e56a91f48b7d458bd1e6c853ddbddb6df5",
+        "anchor": "Symptoms continue into adulthood for many people with ADHD"
+      }
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "filename": "GQ_Q03_P11_CADDRA_4_1.md",
+    "sources": [
+      {
+        "source_id": "P11_CADDRA_4_1",
+        "source_url": "https://www.caddra.ca/wp-content/uploads/Canadian-ADHD-Practice-Guidelines-4.1-January-6-2021.pdf",
+        "original_chunk_id": "chunk:88053b07f41ba373",
+        "original_chunk_index": 78,
+        "original_chunk_sha256": "f78c9711fe62968942cacb91b6bf1607a190c358f9bdc391b8326ddecd7ec8af",
+        "excerpt_sha256": "4a2c939350f7b357c9292914bc677775eab8bcf96b6b54277f9b83fcea55d3ff",
+        "anchor": "low ecological validity"
+      }
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "filename": "GQ_Q04_P11_CADDRA_4_1.md",
+    "sources": [
+      {
+        "source_id": "P11_CADDRA_4_1",
+        "source_url": "https://www.caddra.ca/wp-content/uploads/Canadian-ADHD-Practice-Guidelines-4.1-January-6-2021.pdf",
+        "original_chunk_id": "chunk:ac32722c4c0c2d2c",
+        "original_chunk_index": 277,
+        "original_chunk_sha256": "571c471301820161422e1e2b0c8883b464c27dbeeb8acb4900653cd6b715deae",
+        "excerpt_sha256": "df835f2df325646ba15cffb8c59ed0a4dcb3a5ce9d874b6de34b62affabcdc58",
+        "anchor": "task initiation"
+      }
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "filename": "GQ_Q05_P04_NIMH_Adults.md",
+    "sources": [
+      {
+        "source_id": "P04_NIMH_Adults",
+        "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+        "original_chunk_id": "chunk:addfc540d1c5dced",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "5069683895012f8778f8f7b0f9f7d84e7a465c1913ecb08938810c52cf507c1a",
+        "excerpt_sha256": "12c15c6750e2024eb0e17a5ca9ed72e849e2416b0c4342a7acb8e4e39f7f9cd3",
+        "anchor": "Poor time management, planning, or organization"
+      }
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "filename": "GQ_Q06_P03_NIMH_General.md",
+    "sources": [
+      {
+        "source_id": "P03_NIMH_General",
+        "source_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+        "original_chunk_id": "chunk:9348991035ce0111",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "3cd39d7881c5573b0533aa157664cd64e4de97fbdeeb37c0a131ad720e1f6cd0",
+        "excerpt_sha256": "b4b3f9beb67461dcaaa2a8e98058722a2b3dcb7f8f88b672e6e78494ab7ddc18",
+        "anchor": "school or work performance"
+      }
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "filename": "GQ_Q07_PMC9443814.md",
+    "sources": [
+      {
+        "source_id": "PMC9443814",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9443814/",
+        "original_chunk_id": "chunk:e211cdd06c85cb6f",
+        "original_chunk_index": 27,
+        "original_chunk_sha256": "80078309b3de217424947ff083f3f22f5d71fef20b1d25a03fad75fcec84fc6e",
+        "excerpt_sha256": "1bcbbbfc525efa6ed690aacba2ed6affd9b63522584979a5bebd26b4d0fcb7fa",
+        "anchor": "no studies were conducted in workplace context"
+      }
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "filename": "GQ_Q08_P04_NIMH_Adults.md",
+    "sources": [
+      {
+        "source_id": "P04_NIMH_Adults",
+        "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+        "original_chunk_id": "chunk:addfc540d1c5dced",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "5069683895012f8778f8f7b0f9f7d84e7a465c1913ecb08938810c52cf507c1a",
+        "excerpt_sha256": "69a1cfd40918cf3b0638b384f9d67ca8788401b68891bf14a408613f0448116f",
+        "anchor": "keep appointments, perform daily tasks"
+      }
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "filename": "GQ_Q09_P04_NIMH_Adults.md",
+    "sources": [
+      {
+        "source_id": "P04_NIMH_Adults",
+        "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+        "original_chunk_id": "chunk:addfc540d1c5dced",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "5069683895012f8778f8f7b0f9f7d84e7a465c1913ecb08938810c52cf507c1a",
+        "excerpt_sha256": "ec225c500923984a28b17392c6f1f1f320639a0177b61500872422f349dd5021",
+        "anchor": "strained relationships"
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "filename": "GQ_Q10_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:000ca32b61516b7c",
+        "original_chunk_index": 7,
+        "original_chunk_sha256": "1a0d0285e89c0f17832d33356b7b3e05359b766a9620c677fd18a1a1a1c50b61",
+        "excerpt_sha256": "389160c1bf8c5930874e5dceb493bf84ac2f250bc9d092bfbc60697d87a01599",
+        "anchor": "cause at least moderate psychological"
+      }
+    ]
+  },
+  {
+    "question_id": "Q11",
+    "filename": "GQ_Q11_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:a8b02750d299b86c",
+        "original_chunk_index": 8,
+        "original_chunk_sha256": "a97f4d16afb87fe265806d68aea8498ab351828c9f2fc6919b911872b0f7e309",
+        "excerpt_sha256": "05e8f44c0374aa81bdb9e5d7635a23efb93dc659eb11e40fa91c073e89487595",
+        "anchor": "multiple settings"
+      }
+    ]
+  },
+  {
+    "question_id": "Q12",
+    "filename": "GQ_Q12_P04_NIMH_Adults.md",
+    "sources": [
+      {
+        "source_id": "P04_NIMH_Adults",
+        "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+        "original_chunk_id": "chunk:dd2d60bd695844a1",
+        "original_chunk_index": 2,
+        "original_chunk_sha256": "8324695d2a1ed119b56e6df99776f309a4d41460cd37ee19aa1da00ef2dec7b3",
+        "excerpt_sha256": "d34b18c03bdc8965b67c3a945553ea46a4b250ea163b88696fa28d0b3b4f951a",
+        "anchor": "before age 12"
+      }
+    ]
+  },
+  {
+    "question_id": "Q13",
+    "filename": "GQ_Q13_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:000ca32b61516b7c",
+        "original_chunk_index": 7,
+        "original_chunk_sha256": "1a0d0285e89c0f17832d33356b7b3e05359b766a9620c677fd18a1a1a1c50b61",
+        "excerpt_sha256": "be57a293348abc4fc9ab488a3bea92e1bb09138f36e6ef6814e39703f66308fa",
+        "anchor": "observer reports"
+      }
+    ]
+  },
+  {
+    "question_id": "Q14",
+    "filename": "GQ_Q14_P06_AADPA_Diagnosis.md",
+    "sources": [
+      {
+        "source_id": "P06_AADPA_Diagnosis",
+        "source_url": "https://adhdguideline.aadpa.com.au/diagnosis/adhd-diagnosis/",
+        "original_chunk_id": "chunk:5dbbd53baebe5dce",
+        "original_chunk_index": 2,
+        "original_chunk_sha256": "293451dad4500ed9b011fc83c3ca0d96b69a6f90863bbb3b3383a5fb7051415b",
+        "excerpt_sha256": "46185a297a66114eb8d3810b8a0bfc607ac19f016aba6c4d719b520536bcc65c",
+        "anchor": "rating scales"
+      }
+    ]
+  },
+  {
+    "question_id": "Q15",
+    "filename": "GQ_Q15_P07_AADPA_Cooccurring.md",
+    "sources": [
+      {
+        "source_id": "P07_AADPA_Cooccurring",
+        "source_url": "https://adhdguideline.aadpa.com.au/diagnosis/cooccurring-conditions/",
+        "original_chunk_id": "chunk:b338f0943a7d59ea",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "2029e52b5c3fe67a5709951e43896a538f8527894b3fd08f6d31acb7f4a92a8f",
+        "excerpt_sha256": "3a0b3a47ed5c360de4a6fb432ab3cd6dc295ec04cf026bf448ff4659537d752c",
+        "anchor": "differential diagnosis"
+      }
+    ]
+  },
+  {
+    "question_id": "Q16",
+    "filename": "GQ_Q16_P07_AADPA_Cooccurring.md",
+    "sources": [
+      {
+        "source_id": "P07_AADPA_Cooccurring",
+        "source_url": "https://adhdguideline.aadpa.com.au/diagnosis/cooccurring-conditions/",
+        "original_chunk_id": "chunk:b338f0943a7d59ea",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "2029e52b5c3fe67a5709951e43896a538f8527894b3fd08f6d31acb7f4a92a8f",
+        "excerpt_sha256": "76890e9e14dfd2de566d9ce224648f74e453c0b13f585d141254af5a0268caad",
+        "anchor": "co-occurring"
+      }
+    ]
+  },
+  {
+    "question_id": "Q17",
+    "filename": "GQ_Q17_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:a8b02750d299b86c",
+        "original_chunk_index": 8,
+        "original_chunk_sha256": "a97f4d16afb87fe265806d68aea8498ab351828c9f2fc6919b911872b0f7e309",
+        "excerpt_sha256": "05e8f44c0374aa81bdb9e5d7635a23efb93dc659eb11e40fa91c073e89487595",
+        "anchor": "interview or direct observation in multiple settings"
+      }
+    ]
+  },
+  {
+    "question_id": "Q18",
+    "filename": "GQ_Q18_PMC8534229.md",
+    "sources": [
+      {
+        "source_id": "PMC8534229",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8534229/",
+        "original_chunk_id": "chunk:2f0854c47ad04d37",
+        "original_chunk_index": 5,
+        "original_chunk_sha256": "30a68bcce453b7da3cce0d29164bd4b9a8f09bcd7327dbb7278ab0131f1778e7",
+        "excerpt_sha256": "4e2b1f166ae362aba2723a9a84ba8849f28a62c634aca5f8641adcc641fa9a49",
+        "anchor": "sleep onset latency and sleep efficiency problems were associated with ADHD"
+      }
+    ]
+  },
+  {
+    "question_id": "Q19",
+    "filename": "GQ_Q19_P07_AADPA_Cooccurring.md",
+    "sources": [
+      {
+        "source_id": "P07_AADPA_Cooccurring",
+        "source_url": "https://adhdguideline.aadpa.com.au/diagnosis/cooccurring-conditions/",
+        "original_chunk_id": "chunk:b338f0943a7d59ea",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "2029e52b5c3fe67a5709951e43896a538f8527894b3fd08f6d31acb7f4a92a8f",
+        "excerpt_sha256": "0f90ab339a7ca447b98a4c07facc0cc5af0e5bd6dbb909719fa707fc7312b3e1",
+        "anchor": "anxiety disorders"
+      }
+    ]
+  },
+  {
+    "question_id": "Q20",
+    "filename": "GQ_Q20_PMC8328933.md",
+    "sources": [
+      {
+        "source_id": "PMC8328933",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8328933/",
+        "original_chunk_id": "chunk:ed35989ec069aefe",
+        "original_chunk_index": 214,
+        "original_chunk_sha256": "c453f8d0d69690d47a53713445fba1965b18598674a00bb5f0cd5fa421a427fe",
+        "excerpt_sha256": "ed3bcb75e2454547613bf133c1b63cbed45be3c045d2e8ad377071ae8364744f",
+        "anchor": "genetic and environmental risk factors"
+      }
+    ]
+  },
+  {
+    "question_id": "Q21",
+    "filename": "GQ_Q21_P11_CADDRA_4_1.md",
+    "sources": [
+      {
+        "source_id": "P11_CADDRA_4_1",
+        "source_url": "https://www.caddra.ca/wp-content/uploads/Canadian-ADHD-Practice-Guidelines-4.1-January-6-2021.pdf",
+        "original_chunk_id": "chunk:32a072dfc9b7f588",
+        "original_chunk_index": 148,
+        "original_chunk_sha256": "eb4728e05372ab8954a6514b27e23eb5170b93b09a3e8b87677c147bc9c109a2",
+        "excerpt_sha256": "b37419672422066f329837f31928d4edd5b5d0a1c74dea5c12ad509f67baaca7",
+        "anchor": "one-quarter of adults with substance use disorder"
+      }
+    ]
+  },
+  {
+    "question_id": "Q22",
+    "filename": "GQ_Q22_PMC7422602.md",
+    "sources": [
+      {
+        "source_id": "PMC7422602",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7422602/",
+        "original_chunk_id": "chunk:e1a6090debe0a93a",
+        "original_chunk_index": 4,
+        "original_chunk_sha256": "79d422deaee6e56974419ddbbac7a6705cf0399038b4a792da1bc65330540905",
+        "excerpt_sha256": "eceb9373b2477c01ab0d328b8d39b424225ed3d409100ef60a2f1cd94d89cf66",
+        "anchor": "girls and women with ADHD"
+      }
+    ]
+  },
+  {
+    "question_id": "Q23",
+    "filename": "GQ_Q23_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:f90d37f98539c5d8",
+        "original_chunk_index": 16,
+        "original_chunk_sha256": "a78c555bb2402321d1ed9d7b885b1c63f012e1aa4a7e5be44745cb1b0c848d60",
+        "excerpt_sha256": "656e9854a06ae52aeedbc04c6ecdf89a06d4db70901ec3b1a3d9b09a41f3fc9e",
+        "anchor": "Offer medication to adults with ADHD"
+      }
+    ]
+  },
+  {
+    "question_id": "Q24",
+    "filename": "GQ_Q24_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:73aa0a992b40dbb4",
+        "original_chunk_index": 28,
+        "original_chunk_sha256": "9c394c94ad8d098071cc3eff19a60223bdc0af05ffc4317c526f4e0595ffac23",
+        "excerpt_sha256": "16247a657031fca3d361be6fd1ddf4ca17b760834836014b4c4f8449a5767649",
+        "anchor": "Monitor changes in sleep pattern"
+      }
+    ]
+  },
+  {
+    "question_id": "Q25",
+    "filename": "GQ_Q25_PMC10359875.md",
+    "sources": [
+      {
+        "source_id": "PMC10359875",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10359875/",
+        "original_chunk_id": "chunk:c19bd7ddadf7eff8",
+        "original_chunk_index": 2,
+        "original_chunk_sha256": "e8aa701d1d5857d91bba3c8e98a9b72daf2d650870a096aae30365495604da44",
+        "excerpt_sha256": "deccb74ec7370d42f9043afe8719b9aa70cd6a447e2169bdf971a118a016e51c",
+        "anchor": "ASRS improved more for iCBT"
+      }
+    ]
+  },
+  {
+    "question_id": "Q26",
+    "filename": "GQ_Q26_PMC9443814.md",
+    "sources": [
+      {
+        "source_id": "PMC9443814",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9443814/",
+        "original_chunk_id": "chunk:e211cdd06c85cb6f",
+        "original_chunk_index": 27,
+        "original_chunk_sha256": "80078309b3de217424947ff083f3f22f5d71fef20b1d25a03fad75fcec84fc6e",
+        "excerpt_sha256": "1bcbbbfc525efa6ed690aacba2ed6affd9b63522584979a5bebd26b4d0fcb7fa",
+        "anchor": "no studies were conducted in workplace context"
+      }
+    ]
+  },
+  {
+    "question_id": "Q27",
+    "filename": "GQ_Q27_P02_CDC_Treatment.md",
+    "sources": [
+      {
+        "source_id": "P02_CDC_Treatment",
+        "source_url": "https://www.cdc.gov/adhd/treatment/index.html",
+        "original_chunk_id": "chunk:39a694c80559a8fd",
+        "original_chunk_index": 1,
+        "original_chunk_sha256": "b0bf0f36a6631f408966a6a1377d3311c29874527a0e6a5c316c8d876b5225e9",
+        "excerpt_sha256": "3c8b225380f328721151e23267d6e1cc0586c1892f965e220545fa788e834dc5",
+        "anchor": "parent training in behavior management"
+      }
+    ]
+  },
+  {
+    "question_id": "Q28",
+    "filename": "GQ_Q28_P10_AADPA_Lifestyle.md",
+    "sources": [
+      {
+        "source_id": "P10_AADPA_Lifestyle",
+        "source_url": "https://adhdguideline.aadpa.com.au/non-pharmacological/adhd-lifestyle-changes/",
+        "original_chunk_id": "chunk:26ae385a00f43f1b",
+        "original_chunk_index": 3,
+        "original_chunk_sha256": "e8188132aed80bbf36882d1263b2d57449a91cf88240e03f0125c7dd79e317e6",
+        "excerpt_sha256": "2fa396a0057c7f587233eb9f8b4d76d990b8bc62fc7cc704554aee6a818720a9",
+        "anchor": "very few studies have examined the potential benefits of lifestyle changes"
+      }
+    ]
+  },
+  {
+    "question_id": "Q29",
+    "filename": "GQ_Q29_P05_NICE_NG87.md",
+    "sources": [
+      {
+        "source_id": "P05_NICE_NG87",
+        "source_url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "original_chunk_id": "chunk:b41464d58f6a15e0",
+        "original_chunk_index": 13,
+        "original_chunk_sha256": "127049b1930539d5f9ac66c950ed719398ea3f194a514b28d1560de9f7dbf93f",
+        "excerpt_sha256": "d2577e7632f1d31b9058ee01495114b2c25a50da26c44df0dd74af44cb0c2bbe",
+        "anchor": "their preferences"
+      }
+    ]
+  },
+  {
+    "question_id": "Q30",
+    "filename": "GQ_Q30_PMC12651917.md",
+    "sources": [
+      {
+        "source_id": "PMC12651917",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12651917/",
+        "original_chunk_id": "chunk:97048efcfab66d02",
+        "original_chunk_index": 7,
+        "original_chunk_sha256": "06074eedaeb186167bbafb820cfd1f7db90db186df58cf0adcf080c06c92b8c0",
+        "excerpt_sha256": "70a7503e7420a168699424030676eb05857ce87ac894a37adc3d81a7b8b16916",
+        "anchor": "certainty evidence"
+      }
+    ]
+  }
+]

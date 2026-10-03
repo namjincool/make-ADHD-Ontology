@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0-draft",
+  "status": "candidate_not_ingested",
+  "nodes": [
+    {
+      "id": "claim:adult_adhd_sleep_cooccurrence:001",
+      "type": "Claim",
+      "space": "claim",
+      "statement": "Sleep problems commonly co-occur with ADHD in adults.",
+      "population": "adults with ADHD",
+      "scope": "co-occurrence described by the cited NIMH clinical summary",
+      "relation_type": "associated_with",
+      "causal_status": "association_only",
+      "lifecycle_status": "candidate",
+      "source_evidence_ids": [
+        "evidence:P04_NIMH_Adults:line30"
+      ],
+      "created_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29"
+    },
+    {
+      "id": "evidence:P04_NIMH_Adults:line30",
+      "type": "Evidence",
+      "space": "evidence",
+      "summary": "NIMH states that sleep problems are especially prevalent among adults with ADHD.",
+      "source_id": "P04_NIMH_Adults",
+      "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0",
+      "original_source_path": "primary/P04_NIMH_Adults.html",
+      "original_source_sha256": "1548eab482b4de6eb7e6943e776e01be411ddbe41cdb4e40caf88750d2e7cb52"
+    },
+    {
+      "id": "concept:ADHD",
+      "type": "ADHD",
+      "space": "concept",
+      "instance_policy": "source_backed_only",
+      "reference_only": true
+    },
+    {
+      "id": "concept:Sleep",
+      "type": "Sleep",
+      "space": "concept",
+      "instance_policy": "source_backed_only",
+      "reference_only": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "evidence:P04_NIMH_Adults:line30",
+      "relation": "SUPPORTS",
+      "to": "claim:adult_adhd_sleep_cooccurrence:001"
+    },
+    {
+      "from": "claim:adult_adhd_sleep_cooccurrence:001",
+      "relation": "ABOUT",
+      "to": "concept:ADHD"
+    },
+    {
+      "from": "claim:adult_adhd_sleep_cooccurrence:001",
+      "relation": "ABOUT",
+      "to": "concept:Sleep"
+    }
+  ],
+  "review_notes": [
+    "This is a candidate claim, not a validated or promoted OpenCrab claim.",
+    "The cited passage supports co-occurrence, not a causal direction or diagnostic rule.",
+    "No patient or personal observation nodes are created."
+  ]
+}

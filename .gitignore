@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+*personal_observations*.json
+*personal_observations*.csv
+user-observations/
+private-observations/

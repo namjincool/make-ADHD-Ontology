@@ -1,0 +1,365 @@
+{
+  "title": "ADHD source-backed seed ontology",
+  "version": "0.1.0",
+  "status": "local_seed_candidate_not_cloud_graph",
+  "schema_version": "0.2.0-draft",
+  "canonical_spaces": [
+    "subject",
+    "resource",
+    "evidence",
+    "concept",
+    "claim",
+    "community",
+    "outcome",
+    "lever",
+    "policy"
+  ],
+  "classes_defined": [
+    {
+      "name": "Person",
+      "space": "subject",
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "ADHD",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Symptom",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Inattention",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Hyperactivity",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Impulsivity",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AttentionDifficulty",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "ExecutiveFunction",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "WorkingMemory",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "TaskInitiation",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Planning",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "TimeManagement",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "InhibitoryControl",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "FunctionalImpact",
+      "space": "outcome",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "WorkImpact",
+      "space": "outcome",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AcademicImpact",
+      "space": "outcome",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "RelationshipImpact",
+      "space": "outcome",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Context",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Sleep",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Stress",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Environment",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AlternativeExplanation",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "CooccurringCondition",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Assessment",
+      "space": "concept",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Observation",
+      "space": "evidence",
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "Intervention",
+      "space": "lever",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Outcome",
+      "space": "outcome",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Evidence",
+      "space": "evidence",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Guideline",
+      "space": "resource",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Study",
+      "space": "resource",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Claim",
+      "space": "claim",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Clinician",
+      "space": "subject",
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "Researcher",
+      "space": "subject",
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "Paper",
+      "space": "resource",
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "Dataset",
+      "space": "resource",
+      "instance_policy": "deferred_no_source"
+    },
+    {
+      "name": "GuidelineSection",
+      "space": "evidence",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "StudyResult",
+      "space": "evidence",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "ADHDClinicalDomain",
+      "space": "community",
+      "instance_policy": "deferred_until_graph_build"
+    },
+    {
+      "name": "ExecutiveFunctionCluster",
+      "space": "community",
+      "instance_policy": "deferred_until_graph_build"
+    },
+    {
+      "name": "ImprovedTaskCompletion",
+      "space": "outcome",
+      "instance_policy": "deferred_no_measured_source"
+    },
+    {
+      "name": "BehavioralIntervention",
+      "space": "lever",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "EnvironmentalModification",
+      "space": "lever",
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "ClinicalGuideline",
+      "space": "policy",
+      "instance_policy": "source_backed_only"
+    }
+  ],
+  "relation_types_defined": [
+    "HAS_OBSERVATION",
+    "OBSERVES",
+    "OCCURS_IN",
+    "CHARACTERIZED_BY",
+    "HAS_DOMAIN",
+    "ASSOCIATED_WITH_IMPACT",
+    "ASSESSES",
+    "EVALUATES",
+    "CONSIDERS",
+    "USES_OBSERVATION",
+    "MAY_MIMIC",
+    "CO_OCCURS_WITH",
+    "ASSOCIATED_WITH",
+    "TARGETS_SYMPTOM",
+    "TARGETS_IMPACT",
+    "ASSOCIATED_WITH_OUTCOME",
+    "RECOMMENDS",
+    "STUDIES",
+    "REPORTS",
+    "MEASURES",
+    "SUPPORTS",
+    "CONTRADICTS",
+    "ABOUT",
+    "DERIVED_FROM",
+    "BASED_ON"
+  ],
+  "nodes": [
+    {
+      "node_id": "resource:P04_NIMH_Adults",
+      "space": "resource",
+      "node_type": "Document",
+      "label": "ADHD in Adults: 4 Things to Know",
+      "content": "ADHD in Adults: 4 Things to Know\r\nDownload PDF\r\nEn español\r\n1. Adults can have ADHD.\r\nAttention-deficit/hyperactivity disorder (ADHD) is marked by a persistent pattern of inattention and/or hyperactivity and impulsivity that makes it hard to function in at least two areas of life, such as at home, school, or work.\r\nAdults with ADHD may experience the following types of symptoms:\r\nInattention\r\n: Difficulty paying attention, staying on task, or being organized\r\nHyperactivity\r\n: Excessive activity or restlessness, even at inappropriate times, and difficulty engaging in quiet activities\r\nImpulsivity\r\n: Acting without thinking or having trouble with self-control\r\nBased on their symptoms, a person can be diagnosed with one of three types of ADHD: inattentive, hyperactive-impulsive, or combined.\r\nAdults with ADHD often have a history of poor academic performance, work problems, or strained relationships. They may find it challenging to stay organized, stick to a job, keep appointments, perform daily tasks, or complete large projects. They may be restless, try to do multiple things at once, or engage in risky or impulsive behaviors.\r\nADHD is considered a developmental disorder because symptoms must begin in childhood—but many adults also have ADHD.\r\n2. ADHD symptoms can cause problems in daily life.\r\nADHD symptoms interfere with daily functioning. In adults, symptoms can lead to:\r\nDifficulty paying attention and often getting distracted\r\nDisorganization and procrastination\r\nPoor time management, planning, or organization\r\nTrouble remembering daily tasks\r\nFrequently losing things or being forgetful in activities\r\nFrequently interrupting others or being very talkative\r\nTrouble focusing on a large task or multitasking\r\nTrouble following instructions or finishing projects\r\nDifficulty sitting still for long periods and often moving or fidgeting\r\nFeelings of restlessness and a need for constant activity or stimulation\r\nChoosing immediate rewards over future rewards or consequences\r\nMany people show some of these behaviors some of the time. However, for adults with ADHD, they are more severe, frequent, and persistent, interfering with daily life, occurring across multiple situations, and lasting at least 6 months.\r\nADHD often co-occurs with other mental disorders and can make them harder to treat. Sleep problems are especially prevalent, affecting up to 70% of adults with ADHD.\r\nSymptoms continue into adulthood for many people with ADHD, but they may change with age. For instance, inattentive symptoms often persist as people get older, whereas hyperactivity and impulsivity are more likely to decline. Learn more about\r\nsymptoms and types of ADHD\r\n.\r\n3. ADHD is diagnosed differently in children and adults.\r\nADHD can be diagnosed in childhood or adulthood. However, adults must have shown symptoms much earlier, starting before age 12.\r\nThe main difference between diagnosing ADHD in children and adults is the number of symptoms. Adults or adolescents over 16 years must show five (instead of six) symptoms of inattention or hyperactivity and impulsivity.\r\nHow can a provider know if I showed ADHD symptoms as a child?\r\nDiagnosing ADHD in adulthood is complicated by the need to show symptoms before age 12. For this reason, a diagnosis relies heavily on past reports of behavior.\r\nTo help diagnose ADHD, a primary care provider or mental health professional may ask to talk to people who know you well, such as a partner, family members, and friends, to learn about your behavior in different situations and during childhood. They may look at school reports or other childhood records.\r\nA provider will also talk to you and may ask you to do the following:\r\nComplete clinical interviews, behavior rating scales, or symptom checklists to determine whether you meet the criteria for a diagnosis of ADHD.\r\nTake psychological tests that look at cognitive processes, such as memory, planning, decision-making, reasoning, and thinking, to identify strengths and challenges and possible learning disabilities.\r\nReport on your mood and current and past medical conditions to rule out alternative diagnoses and establish an overall treatment plan.\r\nWhy wasn’t I diagnosed with ADHD earlier?\r\nThere are many reasons someone may not be diagnosed with ADHD until adulthood. For instance, your teachers and parents may not have recognized the disorder or may have provided supportive environments that helped you thrive despite it. Or you may have a milder form of ADHD that could be managed well until faced with the stresses and demands of adulthood, especially at work.\r\nADHD symptoms among girls and women are especially likely to have been missed in childhood. Sex differences in diagnosis rates begin to even out in adulthood.\r\nIt is never too late to seek a diagnosis and treatment for ADHD and any other mental health condition that may occur with it. Effective treatment can make day-to-day life easier for many adults and their families. Find\r\ntips for talking with a health care provider\r\n.\r\nYou can\r\nlearn more about getting help\r\non the NIMH website. You can also learn about\r\nfinding support\r\nand\r\nlocating mental health services\r\nin your area on the Substance Abuse and Mental Health Services Administration (SAMHSA) website.\r\n4. Treatment is available for adults with ADHD.\r\nTreatment for ADHD can reduce symptoms and improve functioning. The most common treatments for ADHD in adults are:\r\nMedication, usually stimulant medications\r\nPsychotherapy, like behavioral and cognitive behavioral therapy\r\nEffective treatment often involves a combination of elements. Sometimes, people must try several treatments before finding the one that works for them.\r\nLearn more about\r\nstimulants and other mental health medications\r\n. Learn more about\r\npsychotherapy\r\n.\r\nSome adults may find it helpful to get support from a life coach or ADHD coach who can teach them executive function skills to improve daily functioning. Others try lifestyle changes, like adding more physical exercise to their daily schedule.\r\nPeople whose ADHD symptoms cause impairment at work may qualify for reasonable accommodations under the\r\nAmericans with Disabilities Act (ADA)\r\n.\r\nFind additional resources\r\nThe following organizations have more information on ADHD:\r\nAttention Deficit Disorder Association\r\nOffers an array of resources to find help, including virtual support groups and a professional directory\r\nChildren and Adults with Attention-Deficit/Hyperactivity Disorder\r\nHosts a National Resource Center with information, links, and resources\r\nCenters for Disease Control and Prevention\r\nProvides information and resources on ADHD symptoms, diagnosis, and treatment options\r\nNote\r\n: This resource list is for informational purposes only. It is not comprehensive, and an organization’s inclusion does not constitute an endorsement by NIMH.\r\nWhat are clinical trials and why are they important?\r\nClinical trials are research studies that look at ways to prevent, detect, or treat diseases and conditions. These studies help show whether a treatment is safe and effective in people. Some people join clinical trials to help doctors and researchers learn more about a disease and improve health care. Other people, such as those with health conditions, join to try treatments that aren’t widely available.\r\nNIMH supports clinical trials across the United States. Talk to a health care provider about clinical trials and whether one is right for you. Learn more about\r\nparticipating in clinical trials\r\n.\r\nFor more information\r\nLearn more about\r\nmental health disorders and topics\r\n. For information about various health topics, visit the\r\nNational Library of Medicine’s MedlinePlus resource.\r\nReprints\r\nThe information in this publication is in the public domain and may be reused or copied without permission. However, you may not reuse or copy images. Please\r\ncite the National Institute of Mental Health\r\nas the source.\r\nRead our copyright policy\r\nto learn more about our guidelines for reusing NIMH content.\r\nU.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES\r\nNational Institutes of Health\r\nNIH Publication No. 24-MH-3573\r\n2024\r\n",
+      "source_id": "P04_NIMH_Adults",
+      "source_url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+      "source_locator": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+      "source_hash_or_external_id": "1548eab482b4de6eb7e6943e776e01be411ddbe41cdb4e40caf88750d2e7cb52",
+      "collected_at": "2026-09-29",
+      "derived_by": "source_pack_original_and_extracted_text",
+      "derivation_version": "0.2.0",
+      "original_file": "primary/P04_NIMH_Adults.html",
+      "extracted_text_sha256": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30"
+    },
+    {
+      "node_id": "evidence:P04_NIMH_Adults:line30",
+      "space": "evidence",
+      "node_type": "Evidence",
+      "label": "NIMH adult ADHD sleep passage",
+      "content": "ADHD often co-occurs with other mental disorders and can make them harder to treat. Sleep problems are especially prevalent, affecting up to 70% of adults with ADHD.",
+      "source_id": "P04_NIMH_Adults",
+      "evidence_type": "public_clinical_information",
+      "population": "adults with ADHD",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0"
+    },
+    {
+      "node_id": "claim:adult_adhd_sleep_cooccurrence:001",
+      "space": "claim",
+      "node_type": "Claim",
+      "label": "Sleep problems commonly co-occur with ADHD in adults.",
+      "statement": "Sleep problems commonly co-occur with ADHD in adults.",
+      "population": "adults with ADHD",
+      "causal_status": "association_only",
+      "lifecycle_status": "candidate",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0"
+    },
+    {
+      "node_id": "concept:ADHD",
+      "space": "concept",
+      "node_type": "ADHD",
+      "label": "ADHD",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0"
+    },
+    {
+      "node_id": "concept:Sleep",
+      "space": "concept",
+      "node_type": "Sleep",
+      "label": "Sleep",
+      "source_locator": "primary/P04_NIMH_Adults.txt#line=30",
+      "source_hash_or_external_id": "4e926710ab0f3dec9754aad4a22df5598632f848f82ee277f8a7a6d3bfd7fc30",
+      "collected_at": "2026-09-29",
+      "derived_by": "manual_source_review",
+      "derivation_version": "0.2.0"
+    }
+  ],
+  "edges": [
+    {
+      "from": "evidence:P04_NIMH_Adults:line30",
+      "relation": "derived_from",
+      "to": "resource:P04_NIMH_Adults",
+      "source_evidence_id": "evidence:P04_NIMH_Adults:line30"
+    },
+    {
+      "from": "evidence:P04_NIMH_Adults:line30",
+      "relation": "supports",
+      "to": "claim:adult_adhd_sleep_cooccurrence:001",
+      "source_evidence_id": "evidence:P04_NIMH_Adults:line30"
+    },
+    {
+      "from": "claim:adult_adhd_sleep_cooccurrence:001",
+      "relation": "about",
+      "to": "concept:ADHD",
+      "source_evidence_id": "evidence:P04_NIMH_Adults:line30"
+    },
+    {
+      "from": "claim:adult_adhd_sleep_cooccurrence:001",
+      "relation": "about",
+      "to": "concept:Sleep",
+      "source_evidence_id": "evidence:P04_NIMH_Adults:line30"
+    }
+  ],
+  "validation_rules": [
+    "node_id unique and immutable",
+    "all edge endpoints exist",
+    "Evidence content verbatim from source locator",
+    "no causes relation without causal validation fields",
+    "personal observations excluded from clinical evidence",
+    "candidate Claim cannot be promoted by design-text ingestion alone"
+  ]
+}

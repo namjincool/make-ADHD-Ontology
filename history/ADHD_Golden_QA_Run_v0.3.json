@@ -1,0 +1,682 @@
+{
+  "pack_id": "3bd6482e-2653-4b30-bb75-e85e44af67d3",
+  "pack_title": "ADHD Ontology Evidence Pack v0.3 Bilingual",
+  "run_date": "2026-10-03",
+  "method": "Korean Golden Question, top_k=6. Retrieval cards contain verbatim excerpts and original chunk hashes, but are not independent source documents. No medical answer accuracy implied.",
+  "summary": {
+    "questions": 30,
+    "own_card_hit": 28,
+    "own_card_top1": 13,
+    "expected_source_id_hit": 29,
+    "direct_original_source_hit": 3,
+    "design_only": 0
+  },
+  "cases": [
+    {
+      "id": "Q01",
+      "question": "ADHD의 핵심 증상 영역은 무엇이며, 부주의·과잉행동·충동성은 각각 어떻게 나타나는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "returned_sources": [
+        "GQ_Q01_P03_NIMH_General.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q03_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q02",
+      "question": "ADHD의 증상 양상은 아동기, 청소년기, 성인기에 어떻게 달라질 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P04_NIMH_Adults"
+      ],
+      "returned_sources": [
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "PMC8328933.txt",
+        "GQ_Q01_P03_NIMH_General.md",
+        "GQ_Q16_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": true,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q03",
+      "question": "부주의 증상과 실행기능의 어려움은 개념과 관찰 방법에서 어떻게 구별되는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q03_P11_CADDRA_4_1.md",
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q01_P03_NIMH_General.md",
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "증상과 실행기능의 엄밀한 차이 검토",
+      "status": "ok"
+    },
+    {
+      "id": "Q04",
+      "question": "과제 또는 업무 시작 지연은 어떤 실행기능 요소와 관련되는가?",
+      "expected_source_ids": [
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q07_PMC9443814.md",
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q26_PMC9443814.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q03_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "성인 업무 시작 지연의 특정 기전 미확인",
+      "status": "ok"
+    },
+    {
+      "id": "Q05",
+      "question": "시간 추정, 우선순위 설정, 계획 실행의 어려움은 각각 어떤 기능 영역과 관련되는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P12_RCPsych_CR235"
+      ],
+      "returned_sources": [
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q07_PMC9443814.md",
+        "GQ_Q08_P11_CADDRA_4_1.md",
+        "GQ_Q03_P11_CADDRA_4_1.md",
+        "GQ_Q17_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q06",
+      "question": "ADHD 관련 어려움은 학습과 과제 수행에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q03_P11_CADDRA_4_1.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q07_PMC9443814.md"
+      ],
+      "own_card_in_top6": false,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q07",
+      "question": "ADHD 관련 어려움은 업무의 시작, 지속, 마감, 오류 관리에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "PMC9443814"
+      ],
+      "returned_sources": [
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q07_PMC9443814.md",
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q25_PMC10359875.md",
+        "GQ_Q03_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "업무 세부 결과별 직접 연구 제한",
+      "status": "ok"
+    },
+    {
+      "id": "Q08",
+      "question": "ADHD 관련 어려움은 가사, 약속, 재정 관리 등 일상생활에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q08_P11_CADDRA_4_1.md",
+        "GQ_Q25_PMC10359875.md",
+        "GQ_Q04_P11_CADDRA_4_1.md",
+        "GQ_Q03_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q09",
+      "question": "ADHD 관련 어려움은 대인관계와 의사소통에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P04_NIMH_Adults",
+        "PMC11151783"
+      ],
+      "returned_sources": [
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q09_P03_NIMH_General.md",
+        "GQ_Q08_P11_CADDRA_4_1.md",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q10",
+      "question": "증상 빈도와 기능 손상 정도는 왜 별도로 평가해야 하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "returned_sources": [
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q10_P05_NICE_NG87.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q18_PMC8534229.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q11",
+      "question": "ADHD 평가에서는 증상의 발달 시기, 지속 기간, 여러 환경에서의 관찰, 기능 손상을 어떻게 확인하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "returned_sources": [
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q17_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q12",
+      "question": "성인 ADHD 평가에서 현재의 어려움과 아동기 발달력을 연결하기 위해 어떤 정보를 확인하는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P06_AADPA_Diagnosis",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q08_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q13",
+      "question": "본인 진술, 가족·교사·동료 등의 관찰, 과거 기록은 평가에서 각각 어떤 역할을 하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "returned_sources": [
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q10_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q14",
+      "question": "증상 평정척도와 인지·신경심리 검사는 무엇을 보조하며, 단독 판단에는 어떤 한계가 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P06_AADPA_Diagnosis"
+      ],
+      "returned_sources": [
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q03_P11_CADDRA_4_1.md",
+        "GQ_Q09_P03_NIMH_General.md",
+        "GQ_Q01_P03_NIMH_General.md",
+        "GQ_Q02_P04_NIMH_Adults.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q15",
+      "question": "ADHD와 비슷한 증상을 보일 수 있는 수면 문제, 불안, 우울, 학습·신체 건강 문제는 어떻게 감별하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "returned_sources": [
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q18_PMC8534229.md",
+        "GQ_Q19_P03_NIMH_General.md",
+        "PMC8534229.txt",
+        "PMC8534229.txt"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": true,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q16",
+      "question": "ADHD와 함께 나타날 수 있는 상태는 무엇이며, 평가·관리 계획에 어떤 영향을 주는가?",
+      "expected_source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q19_P03_NIMH_General.md",
+        "GQ_Q21_P11_CADDRA_4_1.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q23_P05_NICE_NG87.md",
+        "GQ_Q12_P04_NIMH_Adults.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q17",
+      "question": "학교·직장·가정 등 서로 다른 환경의 기능 손상을 어떤 정보로 파악하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "returned_sources": [
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q10_P05_NICE_NG87.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q26_PMC9443814.md",
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q05_P12_RCPsych_CR235.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q18",
+      "question": "수면의 양·질과 ADHD 증상 또는 기능 손상 사이에는 어떤 연관이 보고되며, 방향성과 근거의 한계는 무엇인가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC8534229"
+      ],
+      "returned_sources": [
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q18_PMC8534229.md",
+        "GQ_Q28_PMC8534229.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q10_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "연관 방향·인과성 미확정",
+      "status": "ok"
+    },
+    {
+      "id": "Q19",
+      "question": "스트레스·불안·우울은 ADHD 증상과 어떻게 겹치거나 상호 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "returned_sources": [
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q19_P03_NIMH_General.md",
+        "PMC8328933.txt",
+        "GQ_Q02_P04_NIMH_Adults.md",
+        "GQ_Q11_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": true,
+      "known_gap": "상호 영향의 방향성 미확정",
+      "status": "ok"
+    },
+    {
+      "id": "Q20",
+      "question": "유전적·신경발달적·환경적 요인에 대해 무엇이 알려져 있으며, 연관성과 인과성을 어떻게 구분하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC8328933"
+      ],
+      "returned_sources": [
+        "GQ_Q20_PMC8328933.md",
+        "GQ_Q21_P11_CADDRA_4_1.md",
+        "GQ_Q18_PMC8534229.md",
+        "GQ_Q01_P03_NIMH_General.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q30_PMC12651917.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "유전·환경 인과 추론 별도 검토 필요",
+      "status": "ok"
+    },
+    {
+      "id": "Q21",
+      "question": "ADHD와 물질 사용 문제 사이에는 어떤 연관이 보고되며, 교란 요인은 무엇인가?",
+      "expected_source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P11_CADDRA_4_1"
+      ],
+      "returned_sources": [
+        "GQ_Q21_P11_CADDRA_4_1.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q20_PMC8328933.md",
+        "GQ_Q12_P04_NIMH_Adults.md",
+        "GQ_Q15_P07_AADPA_Cooccurring.md",
+        "00_ADHD_Ontology_Design_Spec.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "교란 요인에 대한 원연구 보강 필요",
+      "status": "ok"
+    },
+    {
+      "id": "Q22",
+      "question": "성별·성별화된 기대에 따라 ADHD의 발견과 평가 과정에 어떤 차이가 보고되는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC7422602"
+      ],
+      "returned_sources": [
+        "GQ_Q22_PMC7422602.md",
+        "GQ_Q06_P03_NIMH_General.md",
+        "GQ_Q11_P05_NICE_NG87.md",
+        "GQ_Q14_P06_AADPA_Diagnosis.md",
+        "GQ_Q13_P05_NICE_NG87.md",
+        "GQ_Q12_P04_NIMH_Adults.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q23",
+      "question": "약물치료는 어떤 증상과 기능 결과를 목표로 하며, 연령대별 근거는 무엇인가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "PMC6109107",
+        "PMC7577505"
+      ],
+      "returned_sources": [
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q24_P05_NICE_NG87.md",
+        "GQ_Q23_P05_NICE_NG87.md",
+        "GQ_Q27_P02_CDC_Treatment.md",
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q10_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q24",
+      "question": "약물치료의 효과와 이상반응을 추적할 때 어떤 지표와 상황을 확인하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P09_AADPA_Medication",
+        "PMC12651917"
+      ],
+      "returned_sources": [
+        "GQ_Q23_P05_NICE_NG87.md",
+        "GQ_Q24_P05_NICE_NG87.md",
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q27_P02_CDC_Treatment.md",
+        "GQ_Q28_PMC8534229.md",
+        "GQ_Q11_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q25",
+      "question": "성인 대상 인지행동치료·행동적 개입은 어떤 실행기능과 일상 기능 개선을 목표로 하는가?",
+      "expected_source_ids": [
+        "P08_AADPA_CBT",
+        "PMC10359875",
+        "PMC11683884"
+      ],
+      "returned_sources": [
+        "GQ_Q05_P12_RCPsych_CR235.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q08_P11_CADDRA_4_1.md",
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q26_PMC9443814.md",
+        "GQ_Q04_P11_CADDRA_4_1.md"
+      ],
+      "own_card_in_top6": false,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": false,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q26",
+      "question": "직장·학교의 환경 조정과 지원은 어떤 기능상의 어려움을 줄이도록 설계되는가?",
+      "expected_source_ids": [
+        "P08_AADPA_CBT",
+        "PMC9443814"
+      ],
+      "returned_sources": [
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q26_PMC9443814.md",
+        "GQ_Q07_PMC9443814.md",
+        "GQ_Q25_PMC10359875.md",
+        "GQ_Q08_P11_CADDRA_4_1.md",
+        "GQ_Q27_P02_CDC_Treatment.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": false,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "직장 조정별 직접 효과 근거 부족",
+      "status": "ok"
+    },
+    {
+      "id": "Q27",
+      "question": "아동·청소년의 부모 교육 및 학교 기반 개입은 어떤 결과를 목표로 하며 근거는 무엇인가?",
+      "expected_source_ids": [
+        "P02_CDC_Treatment",
+        "P03_NIMH_General",
+        "PMC10501699",
+        "PMC12318974"
+      ],
+      "returned_sources": [
+        "GQ_Q27_P02_CDC_Treatment.md",
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q26_PMC9443814.md",
+        "GQ_Q28_PMC8534229.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q28",
+      "question": "수면 관리와 신체활동 등 생활 습관 개입의 효과는 어떤 결과에서 평가되며 근거의 한계는 무엇인가?",
+      "expected_source_ids": [
+        "P10_AADPA_Lifestyle",
+        "PMC8534229"
+      ],
+      "returned_sources": [
+        "GQ_Q28_PMC8534229.md",
+        "GQ_Q18_PMC8534229.md",
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q24_P05_NICE_NG87.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "생활 습관 개입별 근거 차이 큼",
+      "status": "ok"
+    },
+    {
+      "id": "Q29",
+      "question": "개입을 선택하고 조정할 때 연령, 기능 손상, 동반 상태, 선호도, 치료 반응을 어떻게 함께 고려하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P11_CADDRA_4_1",
+        "PMC12651917"
+      ],
+      "returned_sources": [
+        "GQ_Q29_P05_NICE_NG87.md",
+        "GQ_Q27_P02_CDC_Treatment.md",
+        "GQ_Q16_P11_CADDRA_4_1.md",
+        "GQ_Q17_P05_NICE_NG87.md",
+        "GQ_Q24_P05_NICE_NG87.md",
+        "GQ_Q26_PMC9443814.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": null,
+      "status": "ok"
+    },
+    {
+      "id": "Q30",
+      "question": "특정 ADHD 관련 주장에 대해 지지 근거와 상충 근거는 어떤 문서·연구에서 왔으며, 대상 집단·연구 설계·발행 시점은 무엇인가?",
+      "expected_source_ids": [
+        "PMC12651917"
+      ],
+      "returned_sources": [
+        "GQ_Q30_PMC12651917.md",
+        "GQ_Q27_P02_CDC_Treatment.md",
+        "GQ_Q28_PMC8534229.md",
+        "GQ_Q18_PMC8534229.md",
+        "GQ_Q23_P05_NICE_NG87.md",
+        "GQ_Q25_PMC10359875.md"
+      ],
+      "own_card_in_top6": true,
+      "own_card_top1": true,
+      "expected_source_id_in_top6": true,
+      "direct_original_source_in_top6": false,
+      "known_gap": "개별 Claim의 지지·상충 근거는 색인 후 판정",
+      "status": "ok"
+    }
+  ]
+}

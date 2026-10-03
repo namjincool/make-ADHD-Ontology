@@ -1,0 +1,517 @@
+{
+  "title": "ADHD Golden QA v0.1",
+  "version": "0.1.0",
+  "created_at": "2026-10-03",
+  "target_pack": "ADHD Ontology Pack",
+  "method": "source-grounded retrieval and semantic graph audit",
+  "scoring": {
+    "pass": "All required checks pass with original source evidence and valid graph path.",
+    "partial": "Relevant source retrieved but a known gap or graph path remains.",
+    "fail": "Missing source, unsupported claim, wrong population, fabricated edge, or diagnostic inference."
+  },
+  "cases": [
+    {
+      "id": "Q01",
+      "category": "특징",
+      "question": "ADHD의 핵심 증상 영역은 무엇이며, 부주의·과잉행동·충동성은 각각 어떻게 나타나는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q02",
+      "category": "특징",
+      "question": "ADHD의 증상 양상은 아동기, 청소년기, 성인기에 어떻게 달라질 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P04_NIMH_Adults"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q03",
+      "category": "특징",
+      "question": "부주의 증상과 실행기능의 어려움은 개념과 관찰 방법에서 어떻게 구별되는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "증상과 실행기능의 엄밀한 차이 검토",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part"
+      ]
+    },
+    {
+      "id": "Q04",
+      "category": "특징·기능",
+      "question": "과제 또는 업무 시작 지연은 어떤 실행기능 요소와 관련되는가?",
+      "expected_source_ids": [
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "성인 업무 시작 지연의 특정 기전 미확인",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part"
+      ]
+    },
+    {
+      "id": "Q05",
+      "category": "특징·기능",
+      "question": "시간 추정, 우선순위 설정, 계획 실행의 어려움은 각각 어떤 기능 영역과 관련되는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P12_RCPsych_CR235"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q06",
+      "category": "기능 영향",
+      "question": "ADHD 관련 어려움은 학습과 과제 수행에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q07",
+      "category": "기능 영향",
+      "question": "ADHD 관련 어려움은 업무의 시작, 지속, 마감, 오류 관리에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "PMC9443814"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "업무 세부 결과별 직접 연구 제한",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part"
+      ]
+    },
+    {
+      "id": "Q08",
+      "category": "기능 영향",
+      "question": "ADHD 관련 어려움은 가사, 약속, 재정 관리 등 일상생활에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q09",
+      "category": "기능 영향",
+      "question": "ADHD 관련 어려움은 대인관계와 의사소통에 어떤 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P04_NIMH_Adults",
+        "PMC11151783"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q10",
+      "category": "기능 영향",
+      "question": "증상 빈도와 기능 손상 정도는 왜 별도로 평가해야 하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q11",
+      "category": "평가",
+      "question": "ADHD 평가에서는 증상의 발달 시기, 지속 기간, 여러 환경에서의 관찰, 기능 손상을 어떻게 확인하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q12",
+      "category": "평가",
+      "question": "성인 ADHD 평가에서 현재의 어려움과 아동기 발달력을 연결하기 위해 어떤 정보를 확인하는가?",
+      "expected_source_ids": [
+        "P04_NIMH_Adults",
+        "P06_AADPA_Diagnosis",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q13",
+      "category": "평가",
+      "question": "본인 진술, 가족·교사·동료 등의 관찰, 과거 기록은 평가에서 각각 어떤 역할을 하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q14",
+      "category": "평가",
+      "question": "증상 평정척도와 인지·신경심리 검사는 무엇을 보조하며, 단독 판단에는 어떤 한계가 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P06_AADPA_Diagnosis"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q15",
+      "category": "평가",
+      "question": "ADHD와 비슷한 증상을 보일 수 있는 수면 문제, 불안, 우울, 학습·신체 건강 문제는 어떻게 감별하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q16",
+      "category": "평가",
+      "question": "ADHD와 함께 나타날 수 있는 상태는 무엇이며, 평가·관리 계획에 어떤 영향을 주는가?",
+      "expected_source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q17",
+      "category": "평가",
+      "question": "학교·직장·가정 등 서로 다른 환경의 기능 손상을 어떤 정보로 파악하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q18",
+      "category": "관련 요인",
+      "question": "수면의 양·질과 ADHD 증상 또는 기능 손상 사이에는 어떤 연관이 보고되며, 방향성과 근거의 한계는 무엇인가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC8534229"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "연관 방향·인과성 미확정",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q19",
+      "category": "관련 요인",
+      "question": "스트레스·불안·우울은 ADHD 증상과 어떻게 겹치거나 상호 영향을 줄 수 있는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "상호 영향의 방향성 미확정",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q20",
+      "category": "관련 요인",
+      "question": "유전적·신경발달적·환경적 요인에 대해 무엇이 알려져 있으며, 연관성과 인과성을 어떻게 구분하는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC8328933"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "유전·환경 인과 추론 별도 검토 필요",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q21",
+      "category": "관련 요인",
+      "question": "ADHD와 물질 사용 문제 사이에는 어떤 연관이 보고되며, 교란 요인은 무엇인가?",
+      "expected_source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P11_CADDRA_4_1"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "교란 요인에 대한 원연구 보강 필요",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q22",
+      "category": "관련 요인",
+      "question": "성별·성별화된 기대에 따라 ADHD의 발견과 평가 과정에 어떤 차이가 보고되는가?",
+      "expected_source_ids": [
+        "P03_NIMH_General",
+        "PMC7422602"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q23",
+      "category": "관리·개입",
+      "question": "약물치료는 어떤 증상과 기능 결과를 목표로 하며, 연령대별 근거는 무엇인가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "PMC6109107",
+        "PMC7577505"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q24",
+      "category": "관리·개입",
+      "question": "약물치료의 효과와 이상반응을 추적할 때 어떤 지표와 상황을 확인하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P09_AADPA_Medication",
+        "PMC12651917"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q25",
+      "category": "관리·개입",
+      "question": "성인 대상 인지행동치료·행동적 개입은 어떤 실행기능과 일상 기능 개선을 목표로 하는가?",
+      "expected_source_ids": [
+        "P08_AADPA_CBT",
+        "PMC10359875",
+        "PMC11683884"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q26",
+      "category": "관리·개입",
+      "question": "직장·학교의 환경 조정과 지원은 어떤 기능상의 어려움을 줄이도록 설계되는가?",
+      "expected_source_ids": [
+        "P08_AADPA_CBT",
+        "PMC9443814"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "직장 조정별 직접 효과 근거 부족",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q27",
+      "category": "관리·개입",
+      "question": "아동·청소년의 부모 교육 및 학교 기반 개입은 어떤 결과를 목표로 하며 근거는 무엇인가?",
+      "expected_source_ids": [
+        "P02_CDC_Treatment",
+        "P03_NIMH_General",
+        "PMC10501699",
+        "PMC12318974"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q28",
+      "category": "관리·개입",
+      "question": "수면 관리와 신체활동 등 생활 습관 개입의 효과는 어떤 결과에서 평가되며 근거의 한계는 무엇인가?",
+      "expected_source_ids": [
+        "P10_AADPA_Lifestyle",
+        "PMC8534229"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "생활 습관 개입별 근거 차이 큼",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "does not upgrade association or intended target to proven causation/effect"
+      ]
+    },
+    {
+      "id": "Q29",
+      "category": "관리·개입",
+      "question": "개입을 선택하고 조정할 때 연령, 기능 손상, 동반 상태, 선호도, 치료 반응을 어떻게 함께 고려하는가?",
+      "expected_source_ids": [
+        "P05_NICE_NG87",
+        "P11_CADDRA_4_1",
+        "PMC12651917"
+      ],
+      "coverage_expectation": "source_available",
+      "known_gap": null,
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis"
+      ]
+    },
+    {
+      "id": "Q30",
+      "category": "근거 추적",
+      "question": "특정 ADHD 관련 주장에 대해 지지 근거와 상충 근거는 어떤 문서·연구에서 왔으며, 대상 집단·연구 설계·발행 시점은 무엇인가?",
+      "expected_source_ids": [
+        "PMC12651917"
+      ],
+      "coverage_expectation": "partial_with_caveat",
+      "known_gap": "개별 Claim의 지지·상충 근거는 색인 후 판정",
+      "checks": [
+        "answer cites at least one ingested original-source Evidence unit with locator",
+        "source ID, population and evidence kind are visible",
+        "answer does not infer an individual ADHD diagnosis",
+        "explicitly states the known evidence gap or abstains from unsupported part",
+        "claim evidence path distinguishes support from contradiction and records source hash"
+      ]
+    }
+  ]
+}

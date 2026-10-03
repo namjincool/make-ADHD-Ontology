@@ -1,0 +1,142 @@
+[
+  {
+    "document": "00_ADHD_Ontology_Design_Spec.md",
+    "original_chunks": 20,
+    "selected_chunks": 20
+  },
+  {
+    "document": "P01_CDC_Diagnosis.txt",
+    "original_chunks": 4,
+    "selected_chunks": 4
+  },
+  {
+    "document": "P02_CDC_Treatment.txt",
+    "original_chunks": 8,
+    "selected_chunks": 6
+  },
+  {
+    "document": "P03_NIMH_General.txt",
+    "original_chunks": 12,
+    "selected_chunks": 7
+  },
+  {
+    "document": "P04_NIMH_Adults.txt",
+    "original_chunks": 6,
+    "selected_chunks": 6
+  },
+  {
+    "document": "P05_NICE_NG87.txt",
+    "original_chunks": 33,
+    "selected_chunks": 8
+  },
+  {
+    "document": "P06_AADPA_Diagnosis.txt",
+    "original_chunks": 8,
+    "selected_chunks": 6
+  },
+  {
+    "document": "P07_AADPA_Cooccurring.txt",
+    "original_chunks": 5,
+    "selected_chunks": 5
+  },
+  {
+    "document": "P08_AADPA_CBT.txt",
+    "original_chunks": 5,
+    "selected_chunks": 5
+  },
+  {
+    "document": "P09_AADPA_Medication.txt",
+    "original_chunks": 2,
+    "selected_chunks": 2
+  },
+  {
+    "document": "P10_AADPA_Lifestyle.txt",
+    "original_chunks": 5,
+    "selected_chunks": 5
+  },
+  {
+    "document": "P11_CADDRA_4_1.txt",
+    "original_chunks": 563,
+    "selected_chunks": 8
+  },
+  {
+    "document": "P12_RCPsych_CR235.txt",
+    "original_chunks": 234,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC10359875.txt",
+    "original_chunks": 39,
+    "selected_chunks": 7
+  },
+  {
+    "document": "PMC10501699.txt",
+    "original_chunks": 51,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC10755583.txt",
+    "original_chunks": 176,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC11151783.txt",
+    "original_chunks": 79,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC11683884.txt",
+    "original_chunks": 27,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC12188335.txt",
+    "original_chunks": 25,
+    "selected_chunks": 7
+  },
+  {
+    "document": "PMC12318974.txt",
+    "original_chunks": 65,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC12651917.txt",
+    "original_chunks": 43,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC6109107.txt",
+    "original_chunks": 42,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC7422602.txt",
+    "original_chunks": 99,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC7577505.txt",
+    "original_chunks": 70,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC8220843.txt",
+    "original_chunks": 22,
+    "selected_chunks": 7
+  },
+  {
+    "document": "PMC8328933.txt",
+    "original_chunks": 821,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC8534229.txt",
+    "original_chunks": 27,
+    "selected_chunks": 8
+  },
+  {
+    "document": "PMC9443814.txt",
+    "original_chunks": 50,
+    "selected_chunks": 7
+  }
+]

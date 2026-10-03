@@ -1,0 +1,826 @@
+{
+  "title": "ADHD domain ontology schema draft",
+  "version": "0.1.0-draft",
+  "created_at": "2026-09-29",
+  "status": "draft_only_not_ingested",
+  "source_manifest": "source_pack/manifest.json",
+  "opencrab_profile": "metaontology-os-v1",
+  "canonical_spaces": [
+    "subject",
+    "resource",
+    "evidence",
+    "concept",
+    "claim",
+    "community",
+    "outcome",
+    "lever",
+    "policy"
+  ],
+  "classes": [
+    {
+      "name": "Person",
+      "canonical_space": "subject",
+      "parent": null,
+      "definition": "Assessment subject; schema only, no personal records in this pack.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "ADHD",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Attention-deficit/hyperactivity disorder concept.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Symptom",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Reported or assessed symptom type.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Inattention",
+      "canonical_space": "concept",
+      "parent": "Symptom",
+      "definition": "Inattention symptom domain.",
+      "source_ids": [
+        "P03_NIMH_General"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Hyperactivity",
+      "canonical_space": "concept",
+      "parent": "Symptom",
+      "definition": "Hyperactivity symptom domain.",
+      "source_ids": [
+        "P03_NIMH_General"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Impulsivity",
+      "canonical_space": "concept",
+      "parent": "Symptom",
+      "definition": "Impulsivity symptom domain.",
+      "source_ids": [
+        "P03_NIMH_General"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AttentionDifficulty",
+      "canonical_space": "concept",
+      "parent": "Symptom",
+      "definition": "Attention difficulty as an observed feature; not specific to ADHD.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "ExecutiveFunction",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Planning and self-regulatory cognitive-function umbrella.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "WorkingMemory",
+      "canonical_space": "concept",
+      "parent": "ExecutiveFunction",
+      "definition": "Working-memory domain.",
+      "source_ids": [
+        "P03_NIMH_General"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "TaskInitiation",
+      "canonical_space": "concept",
+      "parent": "ExecutiveFunction",
+      "definition": "Initiation domain; adult-specific mechanism remains unestablished here.",
+      "source_ids": [
+        "P11_CADDRA_4_1"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Planning",
+      "canonical_space": "concept",
+      "parent": "ExecutiveFunction",
+      "definition": "Planning domain.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "TimeManagement",
+      "canonical_space": "concept",
+      "parent": "ExecutiveFunction",
+      "definition": "Time-management difficulty/domain as described in adult guidance.",
+      "source_ids": [
+        "P04_NIMH_Adults",
+        "P12_RCPsych_CR235"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "InhibitoryControl",
+      "canonical_space": "concept",
+      "parent": "ExecutiveFunction",
+      "definition": "Inhibition or response-control domain.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "PMC10755583"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "FunctionalImpact",
+      "canonical_space": "outcome",
+      "parent": null,
+      "definition": "Functioning impairment or limitation, separate from symptom count.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "WorkImpact",
+      "canonical_space": "outcome",
+      "parent": "FunctionalImpact",
+      "definition": "Occupational functioning impact.",
+      "source_ids": [
+        "P04_NIMH_Adults",
+        "PMC9443814"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AcademicImpact",
+      "canonical_space": "outcome",
+      "parent": "FunctionalImpact",
+      "definition": "Educational functioning impact.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "PMC11151783"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "RelationshipImpact",
+      "canonical_space": "outcome",
+      "parent": "FunctionalImpact",
+      "definition": "Social or relationship functioning impact.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P04_NIMH_Adults"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Context",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Setting, time, or life-stage context for an observation or finding.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Sleep",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Sleep state or sleep-related problem, qualified per claim.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "PMC8534229"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Stress",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Stress factor to consider in differential assessment.",
+      "source_ids": [
+        "P03_NIMH_General"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Environment",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Home, work, school, or other modifiable setting.",
+      "source_ids": [
+        "P08_AADPA_CBT",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "AlternativeExplanation",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "A possible explanation of overlapping symptoms; not an automatic exclusion.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "CooccurringCondition",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Condition coexisting with ADHD; may also require differential assessment.",
+      "source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Assessment",
+      "canonical_space": "concept",
+      "parent": null,
+      "definition": "Clinical evaluation method or process type.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Observation",
+      "canonical_space": "evidence",
+      "parent": null,
+      "definition": "Dated observation with observer and context; distinct from published-study Evidence.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "schema_only"
+    },
+    {
+      "name": "Intervention",
+      "canonical_space": "lever",
+      "parent": null,
+      "definition": "Medication, psychosocial, or environmental intervention type.",
+      "source_ids": [
+        "P02_CDC_Treatment",
+        "P05_NICE_NG87",
+        "P08_AADPA_CBT"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Outcome",
+      "canonical_space": "outcome",
+      "parent": null,
+      "definition": "Measured result with population, scale, and follow-up time.",
+      "source_ids": [
+        "PMC12651917",
+        "P05_NICE_NG87"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Evidence",
+      "canonical_space": "evidence",
+      "parent": null,
+      "definition": "Verbatim source passage or study finding with provenance.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "PMC12651917"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Guideline",
+      "canonical_space": "policy",
+      "parent": null,
+      "definition": "Published clinical guidance; original file is also a resource.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P11_CADDRA_4_1"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Study",
+      "canonical_space": "resource",
+      "parent": null,
+      "definition": "Published research document, with design and population metadata.",
+      "source_ids": [
+        "PMC6109107",
+        "PMC10359875"
+      ],
+      "instance_policy": "source_backed_only"
+    },
+    {
+      "name": "Claim",
+      "canonical_space": "claim",
+      "parent": null,
+      "definition": "Atomic proposition supported or challenged by source passages.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "PMC12651917"
+      ],
+      "instance_policy": "source_backed_only"
+    }
+  ],
+  "relations": [
+    {
+      "name": "HAS_OBSERVATION",
+      "domain": [
+        "Person"
+      ],
+      "range": [
+        "Observation"
+      ],
+      "definition": "A person has a recorded observation.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "OBSERVES",
+      "domain": [
+        "Observation"
+      ],
+      "range": [
+        "Symptom"
+      ],
+      "definition": "The observation records a symptom, not a diagnosis.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "OCCURS_IN",
+      "domain": [
+        "Observation"
+      ],
+      "range": [
+        "Context"
+      ],
+      "definition": "An observation is anchored to a setting or time.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "CHARACTERIZED_BY",
+      "domain": [
+        "ADHD"
+      ],
+      "range": [
+        "Symptom"
+      ],
+      "definition": "Describes diagnostic symptom domains, not a universal symptom list for every person.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "HAS_DOMAIN",
+      "domain": [
+        "ExecutiveFunction"
+      ],
+      "range": [
+        "WorkingMemory",
+        "TaskInitiation",
+        "Planning",
+        "TimeManagement",
+        "InhibitoryControl"
+      ],
+      "definition": "Describes a domain of executive functioning.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P11_CADDRA_4_1",
+        "P12_RCPsych_CR235"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "ASSOCIATED_WITH_IMPACT",
+      "domain": [
+        "Symptom"
+      ],
+      "range": [
+        "FunctionalImpact"
+      ],
+      "definition": "Observed or described functional association; no generic causal assertion.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87",
+        "PMC11151783"
+      ],
+      "runtime_relation": "associated_with",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "ASSESSES",
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "Symptom"
+      ],
+      "definition": "Assessment examines symptom presentation.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "EVALUATES",
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "FunctionalImpact"
+      ],
+      "definition": "Assessment evaluates impairment separately from symptom count.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P06_AADPA_Diagnosis"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "CONSIDERS",
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "AlternativeExplanation"
+      ],
+      "definition": "Assessment considers other explanations.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "USES_OBSERVATION",
+      "domain": [
+        "Assessment"
+      ],
+      "range": [
+        "Observation"
+      ],
+      "definition": "Assessment may use observer reports or past records.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "MAY_MIMIC",
+      "domain": [
+        "Sleep",
+        "Stress",
+        "AlternativeExplanation"
+      ],
+      "range": [
+        "AttentionDifficulty"
+      ],
+      "definition": "Only a specified sleep problem, stress state, or condition may produce overlapping attention symptoms.",
+      "source_ids": [
+        "P03_NIMH_General",
+        "P07_AADPA_Cooccurring"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "CO_OCCURS_WITH",
+      "domain": [
+        "ADHD"
+      ],
+      "range": [
+        "CooccurringCondition"
+      ],
+      "definition": "Co-occurrence is not evidence of causation or diagnostic exclusion.",
+      "source_ids": [
+        "P07_AADPA_Cooccurring",
+        "P05_NICE_NG87"
+      ],
+      "runtime_relation": "associated_with",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "ASSOCIATED_WITH",
+      "domain": [
+        "Sleep"
+      ],
+      "range": [
+        "ADHD"
+      ],
+      "definition": "Population-specific sleep association; direction remains open.",
+      "source_ids": [
+        "PMC8534229",
+        "P04_NIMH_Adults"
+      ],
+      "runtime_relation": "associated_with",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "TARGETS_SYMPTOM",
+      "domain": [
+        "Intervention"
+      ],
+      "range": [
+        "Symptom"
+      ],
+      "definition": "Intended symptom target; not proof of effectiveness.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P08_AADPA_CBT",
+        "PMC12651917"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "TARGETS_IMPACT",
+      "domain": [
+        "Intervention"
+      ],
+      "range": [
+        "FunctionalImpact"
+      ],
+      "definition": "Intended functioning target; setting and intervention must be specified.",
+      "source_ids": [
+        "P08_AADPA_CBT",
+        "PMC9443814"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "ASSOCIATED_WITH_OUTCOME",
+      "domain": [
+        "Intervention"
+      ],
+      "range": [
+        "Outcome"
+      ],
+      "definition": "Observed outcome within a study, with comparator, measure, and time point.",
+      "source_ids": [
+        "PMC6109107",
+        "PMC10359875",
+        "PMC12651917"
+      ],
+      "runtime_relation": "associated_with",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "RECOMMENDS",
+      "domain": [
+        "Guideline"
+      ],
+      "range": [
+        "Intervention"
+      ],
+      "definition": "Versioned recommendation with population and conditions.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "P11_CADDRA_4_1"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "STUDIES",
+      "domain": [
+        "Study"
+      ],
+      "range": [
+        "ADHD",
+        "Symptom",
+        "Intervention",
+        "Outcome"
+      ],
+      "definition": "Topic examined by a study.",
+      "source_ids": [
+        "PMC6109107",
+        "PMC10359875"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "REPORTS",
+      "domain": [
+        "Study"
+      ],
+      "range": [
+        "Evidence"
+      ],
+      "definition": "A study reports a passage or finding used as evidence.",
+      "source_ids": [
+        "PMC6109107",
+        "PMC10359875"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "MEASURES",
+      "domain": [
+        "Study"
+      ],
+      "range": [
+        "Outcome"
+      ],
+      "definition": "Study explicitly measures a named outcome.",
+      "source_ids": [
+        "PMC6109107",
+        "PMC10359875"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "SUPPORTS",
+      "domain": [
+        "Evidence"
+      ],
+      "range": [
+        "Claim"
+      ],
+      "definition": "Source passage entails the atomic claim in the stated population.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "PMC12651917"
+      ],
+      "runtime_relation": "supports",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "CONTRADICTS",
+      "domain": [
+        "Evidence"
+      ],
+      "range": [
+        "Claim"
+      ],
+      "definition": "Create only for a verified contradiction, not a different population or measure.",
+      "source_ids": [
+        "PMC12651917",
+        "PMC10755583"
+      ],
+      "runtime_relation": "contradicts",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "ABOUT",
+      "domain": [
+        "Claim"
+      ],
+      "range": [
+        "ADHD",
+        "Symptom",
+        "ExecutiveFunction",
+        "FunctionalImpact",
+        "Intervention",
+        "Outcome",
+        "Context"
+      ],
+      "definition": "Topic of an atomic claim.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "PMC12651917"
+      ],
+      "runtime_relation": null,
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    },
+    {
+      "name": "DERIVED_FROM",
+      "domain": [
+        "Evidence"
+      ],
+      "range": [
+        "Study",
+        "Guideline"
+      ],
+      "definition": "Evidence traces to the exact source document and locator.",
+      "source_ids": [
+        "P05_NICE_NG87",
+        "PMC6109107"
+      ],
+      "runtime_relation": "derived_from",
+      "causal": false,
+      "instance_policy": "verified_source_claim_only"
+    }
+  ],
+  "constraints": {
+    "provenance_required": [
+      "source_locator",
+      "source_hash_or_external_id",
+      "collected_at",
+      "derived_by",
+      "derivation_version"
+    ],
+    "claim_required": [
+      "population",
+      "context",
+      "claim_status",
+      "evidence_id"
+    ],
+    "outcome_required": [
+      "measure",
+      "population",
+      "timepoint"
+    ],
+    "observation_required_if_future_person_data": [
+      "observer_type",
+      "setting",
+      "observed_at",
+      "consent_or_legal_basis"
+    ],
+    "forbidden_without_separate_causal_validation": [
+      "causes",
+      "AFFECTS"
+    ],
+    "no_metadata_only_evidence": true,
+    "no_person_instances_from_publications": true,
+    "custom_relations_require_manifest_check": true
+  },
+  "deferred_assertions": [
+    "Stress causes AttentionDifficulty",
+    "Sleep directly causes AttentionDifficulty",
+    "TaskInitiation is the unique cause of work-start delay in adults",
+    "Any specific workplace adjustment reliably improves all ADHD outcomes"
+  ]
+}
