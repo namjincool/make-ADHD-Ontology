@@ -2,9 +2,17 @@ from hashlib import sha256
 from pathlib import Path
 
 root = Path(__file__).resolve().parent
-parts = sorted((root / "parts").glob("ADHD_Ontology_Pack_v0.4_reviewed_strict.zip.part*"))
-if not parts:
-    raise SystemExit("No archive parts found")
+parts_dir = root / "parts"
+parts = []
+for number in range(1, 19):
+    prefix = f"ADHD_Ontology_Pack_v0.4_reviewed_strict.zip.part{number:03d}"
+    if number == 11:
+        parts.extend([parts_dir / (prefix + "a"), parts_dir / (prefix + "b")])
+    else:
+        parts.append(parts_dir / prefix)
+missing = [part.name for part in parts if not part.is_file()]
+if missing:
+    raise SystemExit("Missing archive part(s): " + ", ".join(missing))
 out = root / "ADHD_Ontology_Pack_v0.4_reviewed_strict.zip"
 with out.open("wb") as target:
     for part in parts:
